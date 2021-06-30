@@ -1,6 +1,7 @@
 import { Container, Typography, Toolbar } from '@material-ui/core';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Header from '../../components/Header';
+import Preview from '../../components/Preview';
 
 import { getData } from  '../../util/GetData';
 
@@ -13,7 +14,8 @@ const Home = () => {
   const useStyles = makeStyles((theme) => ({
     mainContainer: {
       backgroundColor: theme.palette.accent.main,
-      minHeight: '100vh'
+      minHeight: '100vh',
+      paddingTop: '20px'
     }
   }));
 
@@ -26,7 +28,8 @@ const Home = () => {
         maxWidth="md"
         className={classes.mainContainer}
         >
-        <div>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </div>
+        <Preview/>
+        <Preview/>
       </Container>
     </div>
   )
